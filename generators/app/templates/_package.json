@@ -1,6 +1,6 @@
 {
     "name": "lesson2",
-    "version": "0.0.1",
+    "version": "0.2.1",
     "main": "./src/server/index.js",
     "keywords": [
         "yeoman-generator",
