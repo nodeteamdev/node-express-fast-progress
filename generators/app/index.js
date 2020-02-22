@@ -23,9 +23,36 @@ module.exports = class extends Generator {
     }
 
     writing() {
-        this.fs.copy(
-            this.templatePath('dummyfile.txt'),
-            this.destinationPath('dummyfile.txt'),
+        this.fs.copyTpl(
+            this.templatePath('_nodemon.json'),
+            this.destinationPath(`${this.name}/nodemon.json`),
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('_package.json'),
+            this.destinationPath(`${this.name}/package.json`),
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('src/'),
+            this.destinationPath(`${this.name}/src/`), {
+                name: this.name,
+            },
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('_README.md'),
+            this.destinationPath(`${this.name}/README.md`),
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('LICENSE'),
+            this.destinationPath(`${this.name}/LICENSE`),
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('_.eslintrc'),
+            this.destinationPath(`${this.name}/.eslintrc`),
         );
     }
 
