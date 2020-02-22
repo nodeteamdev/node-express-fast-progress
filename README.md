@@ -6,6 +6,7 @@
 ![onix](https://img.shields.io/badge/onix-systems-blue.svg)
 
 > Node.js Express API with vanilla JS. Supports MongoDB(mongoose)
+> See [node-express-typescript-api](https://www.npmjs.com/package/generator-node-express-typescript-api) if you need TypeScript
 
 ## Description
 This generator will help you to build your own Node.js REST API with Express Mongoose.
