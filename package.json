@@ -1,6 +1,6 @@
 {
-    "name": "generator-node-express-fast-progress",
-    "version": "0.2.2",
+    "name": "node-express-fast-progress",
+    "version": "0.2.3",
     "description": "This generator will help you to build your own Node.js Express API",
     "homepage": "https://github.com/ChechaValerii",
     "author": {
@@ -80,6 +80,6 @@
         "pretest": "eslint .",
         "test": "jest"
     },
-    "repository": "ChechaValerii/generator-node-express-fast-progress",
+    "repository": "ChechaValerii/node-express-fast-progress",
     "license": "Apache-2.0"
 }
